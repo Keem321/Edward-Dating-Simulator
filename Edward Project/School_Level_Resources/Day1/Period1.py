@@ -21,8 +21,12 @@ def run():
         if english2 == "2":
             print("Edward considers you for a moment, then waves back with a smile.")
             c.lp_up(1)
-            print("Barely restraining the overwhelming giddiness of having gotten a reaction,"
-                  "you muster up the courage to ")
+            print("Overwhelmed with giddiness at having gotten a reaction, you barely hear the bell ring. "
+                  "On your way out of class you end up walking with Edward in the halls. You should say something "
+                  "to break up the awkward atmosphere..."
+                  "\n1. WIP"
+                  "\n2. WIP"
+                  "\n3. WIP")
             # edward waves back, small lp, leads to a conversation in the hallway
         if english2 == "3":
             print("You stare longingly into Edward's eyes. Hoping that your deepest affections can be broadcast"
