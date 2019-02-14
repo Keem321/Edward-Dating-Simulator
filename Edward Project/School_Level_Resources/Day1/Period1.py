@@ -7,7 +7,6 @@ def run():
         "\nYou open your schoolbag and grab the assigned reading. Will you..."
         "\n1.Read alone like a scrub"
         "\n2.Ask Edward to read with you\n")
-    # Path 1
     if english1 == "1":
         print("\nYou decide to read by yourself. Its lonely, but you do get all your work done ahead of time.\n")
         english2 = input(
@@ -20,21 +19,22 @@ def run():
             print("The shame of being caught hangs over you. You keep your head down and don't look up again until"
                   "the bell rings. ")
         if english2 == "2":
-            print("Not Finished")
+            print("Edward considers you for a moment, then waves back with a smile.")
+            c.lp_up(1)
+            print("Barely restraining the overwhelming giddiness of having gotten a reaction,"
+                  "you muster up the courage to ")
             # edward waves back, small lp, leads to a conversation in the hallway
         if english2 == "3":
             print("You stare longingly into Edward's eyes. Hoping that your deepest affections can be broadcast"
                   "through this moment your sharing together."
                   "\nInstead, Edward makes a face and looks away. Stupid! You lost track of time swimming in his"
-                  "chocolate fondue eyes and stared for way too long.")
+                  "chocolate fondue eyes and stared for way too long."
+                  "\nSoon after this regrettable exchange, the bell rings and its time to go to second period.")
             c.lp_down(1)
-            # edward thinks its awkward
-    # Path 2
     elif english1 == "2":
-        if c.LP > 30:
-            print("Some mushy line about Edward :P")
-            # Add more conversation options about reading with edward
-        else:
-            print("Edward rejects")
-            c.lp_down(1)
-            print("TESTING LovePoints: " + str(c.LP))
+        print("You walk across the room and awkwardly ask Edward if he wants to read together.")
+        c.lp_down(1)
+        print("TESTING LovePoints: " + str(c.LP))
+
+# Try not to put too many LP checks early on in the game, it wont be possible to get to 30 over a period or two
+# The lp_down should have its own reaction message, so you don't need one
