@@ -49,6 +49,11 @@ def lp_big_down(level):
         LP -= 20
 
 
+def lp_neutral():
+    global LP
+    print(neutralReacTable.get(random.randint(0, 9)))
+
+
 posReacTable = {
     0: "Edward is pleased with you.",
     1: "Edward smiles at you.",
@@ -100,3 +105,15 @@ extraPosReacTable = {
     8: "Edward gives you a smile, and you notice the smile linger on for a few minutes...",
     9: "Edward looks down at his feet, but he is trying not to show the large smile on his face. ",
 }
+neutralReacTable = {
+    0: "Edward sighs.",
+    1: "Edward's eyes look glazed over.",
+    2: "Edward shifts his weight from foot to foot.",
+    3: "Edward stares at you.",
+    4: "The awkward tension hangs in the air.",
+    5: "Edward twiddles his thumbs.",
+    6: "Edward clears his throat.",
+    7: "Edward stands and looks at you.",
+    8: "Edward seems a little uncomfortable.",
+    9: "You cannot help but feel as though your actions did not do what you had hoped.",
+    }
